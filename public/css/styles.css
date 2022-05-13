@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+main #header {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+main #header .logo {
+  display: flex;
+}
+main #header .logo .h1-logo {
+  height: 50px;
+}
+main #header .logo .h1-logo span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #356B95;
+}
+main #header .logo .h2-logo {
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 5px;
+}
+main #progress {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main #progress .bar {
+  padding: 0 20px;
+  width: 100%;
+  height: 100px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+}
+main #progress .bar .progress-bc-bar {
+  width: 100%;
+  height: 3px;
+  background-color: #ECECEC;
+}
+main #progress .bar .progress-bc-bar .progress-bar {
+  width: 35%;
+  height: 100%;
+  background-color: #356B95;
+}
+main #progress .internships {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+main #progress .internships .box-internships {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+main #progress .internships .box-internships .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #356B95;
+  border: solid 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #progress .internships .box-internships .circle span {
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+}
+main #form {
+  padding: 0 20px;
+  width: 100%;
+  height: auto;
+}
+main #form form .comp-form {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+main #form form .comp-form label {
+  margin: 5px 2px;
+  font-weight: 500;
+}
+main #form form .comp-form input {
+  height: 35px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 0 1.5px black;
+  font-size: 18px;
+  padding-left: 10px;
+  outline: none;
+}
+main #form form .comp-half-form {
+  width: 70%;
+}
+main #form form .comp-small-form {
+  width: 60%;
+}
+main #form form .button-form {
+  padding: 30px 0;
+}
+main #form form .button-form button {
+  width: 100%;
+  height: 55px;
+  background-color: #356B95;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 1.5px black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+main #form form .button-form button:hover {
+  transform: scale(1.01);
+}
+
+/*# sourceMappingURL=styles.css.map */

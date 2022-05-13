@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./public/css/styles.css">
+  <title>Health Insurance</title>
+</head>
+<body>
+  <main>
+    <div id="header">
+      <div class="logo">
+        <div class="h1-logo">
+          <span>IBB</span>
+        </div>
+        <div class="h2-logo">
+          <span>Checkout</span>
+        </div>
+      </div>
+    </div>
+    <div id="progress">
+      <div class="bar">
+        <div class="progress-bc-bar">
+          <div class="progress-bar">
+            
+          </div>
+        </div>
+      </div>
+      <div class="internships">
+        <div class="box-internships">
+          <div class="circle">
+            <span>1</span>
+          </div>
+        </div>
+        <div class="box-internships">
+          <div class="circle">
+            <span>2</span>
+          </div>
+        </div>
+        <div class="box-internships">
+          <div class="circle">
+            <span>3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="form">
+      <form action="#" method="post">
+        <div class="comp-form">
+          <label for="name">Nome completo</label>
+          <input name="name" type="text">
+        </div>
+        <div class="comp-form">
+          <label for="email">E-mail</label>
+          <input name="email" type="email">
+        </div>
+        <div class="comp-form comp-half-form">
+          <label for="cpf">CPF</label>
+          <input inputmode="numeric" name="cpf" type="text" oninput="CPF(this)">
+        </div>
+        <div class="comp-form comp-half-form">
+          <label for="rg">RG</label>
+          <input inputmode="numeric" name="rg" type="text" oninput="RG(this)">
+        </div>
+        <div class="comp-form comp-small-form">
+          <label for="date">Data de nascimento</label>
+          <input inputmode="numeric" name="nameDate" type="text" oninput="date(this)">
+        </div>
+        <div class="comp-form comp-small-form">
+          <label for="cell">Celular / Whatsapp</label>
+          <input inputmode="numeric" name="nameCell" type="text" oninput="cell(this)">
+        </div>
+        <div class="button-form">
+          <button>Continuar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+<script src="./public/js/form.js"></script>
+</html>
